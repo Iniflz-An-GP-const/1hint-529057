@@ -25,6 +25,10 @@
     <!-- enums (labels the filters and statistics rely on) -->
 
     <!-- workout categories: workout_type_<category_name>_title -->
+    <string name="workout_type_strength_title">Strength</string>
+    <string name="workout_type_core_title">Core</string>
+    <string name="workout_type_upper_body_title">Upper Body</string>
+    <string name="workout_type_hiit_title">HIIT</string>
 
     <!-- Difficulty enum -->
     <string name="difficulty_beginner">Beginner</string>
