@@ -70,6 +70,28 @@ class WorkoutViewModel(
         advance(index)
     }
 
+    /** Saves the workout as fully completed, without running it exercise by exercise. */
+    fun onCompleteWorkoutConfirmed(onSaved: () -> Unit) {
+        val state = currentWorkout() ?: return
+
+        timerJob?.cancel()
+        viewModelScope.launch {
+            workoutSessionRepository.save(
+                WorkoutSessionEntity(
+                    workoutId = state.workout.id,
+                    workoutName = state.workout.name,
+                    workoutType = state.workout.type.name,
+                    difficulty = state.workout.difficulty.name,
+                    completedExercises = state.exercises.size,
+                    totalExercises = state.exercises.size,
+                    isFullyCompleted = true,
+                    timestamp = LocalDateTime.now(),
+                )
+            )
+            onSaved()
+        }
+    }
+
     fun onEndWorkoutClick() {
         val state = currentWorkout() ?: return
         if (!state.hasStarted || state.isFinished) return

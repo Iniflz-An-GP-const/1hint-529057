@@ -23,4 +23,7 @@ sealed class NavRoute {
 
     @Serializable
     object Profile : NavRoute()
+
+    @Serializable
+    object Settings : NavRoute()
 }

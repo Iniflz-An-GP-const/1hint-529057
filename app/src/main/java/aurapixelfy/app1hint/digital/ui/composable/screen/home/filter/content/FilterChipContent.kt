@@ -12,6 +12,7 @@ import androidx.compose.material3.FilterChip
 import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalContentColor
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -65,6 +66,11 @@ fun FilterChipContent(item: FilterChipItem, modifier: Modifier = Modifier) {
             else -> null
         },
         shape = RoundedCornerShape(dimens.controlCornerRadius),
+        colors = FilterChipDefaults.filterChipColors(
+            selectedContainerColor = MaterialTheme.colorScheme.primary,
+            selectedLabelColor = MaterialTheme.colorScheme.onPrimary,
+            selectedLeadingIconColor = MaterialTheme.colorScheme.onPrimary,
+        ),
         modifier = modifier
             .pressFeedback(interactionSource, PressStrength.Button)
             .selectionPop(item.selected),

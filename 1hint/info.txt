@@ -1,0 +1,7 @@
+name=1hint
+bundle=aurapixelfy.app1hint.digital
+organization=AURA PIXELFY LTD
+alias=key0
+pwd=4sNyjcsWFZAnk0cOc898xlRX
+key-pwd=4sNyjcsWFZAnk0cOc898xlRX
+repo=https://github.com/Iniflz-An-GP-const/1hint-529057

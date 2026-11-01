@@ -42,20 +42,23 @@ val viewModule = module {
 
     viewModel {
         HistoryViewModel(
-            workoutSessionRepository = get()
+            workoutSessionRepository = get(),
+            workoutRepository = get()
         )
     }
 
     viewModel {
         StatisticsViewModel(
-            workoutSessionRepository = get()
+            workoutSessionRepository = get(),
+            workoutRepository = get()
         )
     }
 
     viewModel {
         ProfileViewModel(
             profileRepository = get(),
-            workoutSessionRepository = get()
+            workoutSessionRepository = get(),
+            workoutRepository = get()
         )
     }
 }

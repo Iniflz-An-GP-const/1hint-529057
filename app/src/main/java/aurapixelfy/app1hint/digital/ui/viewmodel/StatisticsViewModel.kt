@@ -3,23 +3,19 @@ package aurapixelfy.app1hint.digital.ui.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import aurapixelfy.app1hint.digital.data.entity.WorkoutSessionEntity
+import aurapixelfy.app1hint.digital.data.model.estimatedMinutes
+import aurapixelfy.app1hint.digital.data.repository.WorkoutRepository
 import aurapixelfy.app1hint.digital.data.repository.WorkoutSessionRepository
 import aurapixelfy.app1hint.digital.ui.state.DataUiState
-import aurapixelfy.app1hint.digital.ui.state.WorkoutFilterMode
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
-import kotlinx.coroutines.flow.update
 
 class StatisticsViewModel(
-    private val workoutSessionRepository: WorkoutSessionRepository,
+    workoutSessionRepository: WorkoutSessionRepository,
+    private val workoutRepository: WorkoutRepository,
 ) : ViewModel() {
-    private val _chartMode = MutableStateFlow(WorkoutFilterMode.TYPE)
-    val chartMode: StateFlow<WorkoutFilterMode>
-        get() = _chartMode.asStateFlow()
 
     val sessionsState: StateFlow<DataUiState<List<WorkoutSessionEntity>>> =
         workoutSessionRepository.observeAll()
@@ -30,9 +26,9 @@ class StatisticsViewModel(
                 initialValue = DataUiState.Initial,
             )
 
-    fun onChartModeToggled() {
-        _chartMode.update { mode ->
-            if (mode == WorkoutFilterMode.TYPE) WorkoutFilterMode.DIFFICULTY else WorkoutFilterMode.TYPE
+    fun totalMinutes(sessions: List<WorkoutSessionEntity>): Int {
+        return sessions.sumOf { session ->
+            workoutRepository.getById(session.workoutId)?.estimatedMinutes() ?: 0
         }
     }
 }

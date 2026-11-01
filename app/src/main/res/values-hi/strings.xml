@@ -105,4 +105,40 @@
     <string name="profile_screen_version_label">संस्करण</string>
     <string name="profile_screen_developer_label">डेवलपर</string>
     <string name="profile_screen_contact_label">संपर्क</string>
+
+    <!-- screen spec additions -->
+    <string name="get_started_button_title">शुरू करें</string>
+    <string name="home_filter_toggle_description">फ़िल्टर</string>
+    <string name="workout_card_meta">%1$d मिनट · %2$d व्यायाम</string>
+    <string name="workout_duration_minutes">%1$d मिनट</string>
+    <string name="workout_details_exercises_title">व्यायाम</string>
+    <string name="exercise_rest_format">आराम %1$d से.</string>
+    <string name="complete_workout_dialog_title">वर्कआउट पूरा चिह्नित करें?</string>
+    <string name="complete_workout_dialog_message">यह सत्र आपके इतिहास में सहेजा जाएगा।</string>
+    <string name="complete_workout_dialog_confirm">पुष्टि करें</string>
+    <string name="history_empty_title">अपना पहला वर्कआउट पूरा करें!</string>
+    <string name="history_summary_total">कुल वर्कआउट</string>
+    <string name="history_today">आज</string>
+    <string name="history_yesterday">कल</string>
+    <string name="statistics_total_workouts">कुल वर्कआउट</string>
+    <string name="statistics_total_hours">कुल घंटे</string>
+    <string name="statistics_favorite_type">पसंदीदा प्रकार</string>
+    <string name="statistics_weekly_activity">साप्ताहिक गतिविधि</string>
+    <string name="statistics_weekly_activity_format">%1$d/7</string>
+    <string name="statistics_favorite_none">कोई नहीं</string>
+    <string name="statistics_weekly_chart_title">इस सप्ताह</string>
+    <string name="statistics_motivation_title">लगे रहें</string>
+    <string name="statistics_motivation_start">पहला वर्कआउट सबसे कठिन कदम है। आज ही शुरू करें!</string>
+    <string name="statistics_motivation_progress">शानदार! हर सत्र आपको और मज़बूत बनाता है।</string>
+    <string name="profile_screen_profile_section_title">आपकी प्रोफ़ाइल</string>
+    <string name="profile_name_label">नाम</string>
+    <string name="profile_age_label">उम्र</string>
+    <string name="profile_fitness_level_label">फिटनेस स्तर</string>
+    <string name="profile_default_name">एथलीट</string>
+    <string name="profile_save_button">सहेजें</string>
+    <string name="profile_settings_link">सेटिंग्स</string>
+    <string name="profile_stat_workouts">वर्कआउट</string>
+    <string name="profile_stat_hours">घंटे</string>
+    <string name="profile_stat_days_active">सक्रिय दिन</string>
+    <string name="axpdl_top_bar_settings_title">सेटिंग्स</string>
 </resources>

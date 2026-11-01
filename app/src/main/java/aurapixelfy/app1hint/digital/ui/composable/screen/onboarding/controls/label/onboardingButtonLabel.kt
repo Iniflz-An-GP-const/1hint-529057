@@ -11,9 +11,6 @@ fun onboardingButtonLabel(
     pageCount: Int,
 ): String {
     return stringResource(
-        R.string.onboarding_button_progress,
-        stringResource(if (isLastPage) R.string.start_button_title else R.string.next_button_title),
-        currentPage + 1,
-        pageCount,
+        if (isLastPage) R.string.get_started_button_title else R.string.next_button_title
     )
 }

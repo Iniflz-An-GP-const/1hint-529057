@@ -105,4 +105,40 @@
     <string name="profile_screen_version_label">Versi</string>
     <string name="profile_screen_developer_label">Pengembang</string>
     <string name="profile_screen_contact_label">Kontak</string>
+
+    <!-- screen spec additions -->
+    <string name="get_started_button_title">Mulai Sekarang</string>
+    <string name="home_filter_toggle_description">Filter</string>
+    <string name="workout_card_meta">%1$d mnt · %2$d latihan</string>
+    <string name="workout_duration_minutes">%1$d mnt</string>
+    <string name="workout_details_exercises_title">Latihan</string>
+    <string name="exercise_rest_format">Istirahat %1$d dtk</string>
+    <string name="complete_workout_dialog_title">Tandai latihan selesai?</string>
+    <string name="complete_workout_dialog_message">Sesi ini akan disimpan ke riwayat Anda.</string>
+    <string name="complete_workout_dialog_confirm">Konfirmasi</string>
+    <string name="history_empty_title">Selesaikan latihan pertama Anda!</string>
+    <string name="history_summary_total">Total Latihan</string>
+    <string name="history_today">Hari ini</string>
+    <string name="history_yesterday">Kemarin</string>
+    <string name="statistics_total_workouts">Total Latihan</string>
+    <string name="statistics_total_hours">Total Jam</string>
+    <string name="statistics_favorite_type">Tipe Favorit</string>
+    <string name="statistics_weekly_activity">Aktivitas Mingguan</string>
+    <string name="statistics_weekly_activity_format">%1$d/7</string>
+    <string name="statistics_favorite_none">Tidak ada</string>
+    <string name="statistics_weekly_chart_title">Minggu Ini</string>
+    <string name="statistics_motivation_title">Terus Semangat</string>
+    <string name="statistics_motivation_start">Latihan pertama adalah langkah tersulit. Mulai hari ini!</string>
+    <string name="statistics_motivation_progress">Kerja bagus! Setiap sesi membuat Anda lebih kuat.</string>
+    <string name="profile_screen_profile_section_title">Profil Anda</string>
+    <string name="profile_name_label">Nama</string>
+    <string name="profile_age_label">Usia</string>
+    <string name="profile_fitness_level_label">Tingkat Kebugaran</string>
+    <string name="profile_default_name">Atlet</string>
+    <string name="profile_save_button">Simpan</string>
+    <string name="profile_settings_link">Pengaturan</string>
+    <string name="profile_stat_workouts">Latihan</string>
+    <string name="profile_stat_hours">Jam</string>
+    <string name="profile_stat_days_active">Hari Aktif</string>
+    <string name="axpdl_top_bar_settings_title">Pengaturan</string>
 </resources>

@@ -199,4 +199,40 @@
 
     <string name="profile_screen_contact_label">Contact</string>
     <string name="axpdl_customer_support_link" translatable="false">https://aura-pixelfy.click</string>
+
+    <!-- screen spec additions -->
+    <string name="get_started_button_title">Get Started</string>
+    <string name="home_filter_toggle_description">Filters</string>
+    <string name="workout_card_meta">%1$d min · %2$d exercises</string>
+    <string name="workout_duration_minutes">%1$d min</string>
+    <string name="workout_details_exercises_title">Exercises</string>
+    <string name="exercise_rest_format">Rest %1$ds</string>
+    <string name="complete_workout_dialog_title">Mark workout as completed?</string>
+    <string name="complete_workout_dialog_message">This session will be saved to your history.</string>
+    <string name="complete_workout_dialog_confirm">Confirm</string>
+    <string name="history_empty_title">Complete your first workout!</string>
+    <string name="history_summary_total">Total Workouts</string>
+    <string name="history_today">Today</string>
+    <string name="history_yesterday">Yesterday</string>
+    <string name="statistics_total_workouts">Total Workouts</string>
+    <string name="statistics_total_hours">Total Hours</string>
+    <string name="statistics_favorite_type">Favorite Type</string>
+    <string name="statistics_weekly_activity">Weekly Activity</string>
+    <string name="statistics_weekly_activity_format">%1$d/7</string>
+    <string name="statistics_favorite_none">None</string>
+    <string name="statistics_weekly_chart_title">This Week</string>
+    <string name="statistics_motivation_title">Keep Going</string>
+    <string name="statistics_motivation_start">Your first workout is the hardest step. Start one today!</string>
+    <string name="statistics_motivation_progress">Great work! Every session builds a stronger you.</string>
+    <string name="profile_screen_profile_section_title">Your Profile</string>
+    <string name="profile_name_label">Name</string>
+    <string name="profile_age_label">Age</string>
+    <string name="profile_fitness_level_label">Fitness Level</string>
+    <string name="profile_default_name">Athlete</string>
+    <string name="profile_save_button">Save</string>
+    <string name="profile_settings_link">Settings</string>
+    <string name="profile_stat_workouts">Workouts</string>
+    <string name="profile_stat_hours">Hours</string>
+    <string name="profile_stat_days_active">Days Active</string>
+    <string name="axpdl_top_bar_settings_title">Settings</string>
 </resources>

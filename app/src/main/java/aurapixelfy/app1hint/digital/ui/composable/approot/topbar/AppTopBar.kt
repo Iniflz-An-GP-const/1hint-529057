@@ -3,6 +3,7 @@ package aurapixelfy.app1hint.digital.ui.composable.approot.topbar
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -41,6 +42,7 @@ private val IconSize = 32.dp
 fun AppTopBar(
     currentDestination: NavDestination?,
     onNavigateBack: () -> Unit,
+    actions: @Composable RowScope.() -> Unit = {},
 ) {
     val dimens = LocalDimens.current
     val canNavigateBack = currentDestination.matchesAnyRoute(canNavigateBackRoutes)
@@ -83,6 +85,8 @@ fun AppTopBar(
                     }
                 }
             },
+
+            actions = actions,
 
             colors = TopAppBarDefaults.topAppBarColors(
                 containerColor = containerColor,

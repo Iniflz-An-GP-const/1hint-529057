@@ -105,4 +105,40 @@
     <string name="profile_screen_version_label">Version</string>
     <string name="profile_screen_developer_label">Promoteur</string>
     <string name="profile_screen_contact_label">Contact</string>
+
+    <!-- screen spec additions -->
+    <string name="get_started_button_title">Commencer</string>
+    <string name="home_filter_toggle_description">Filtres</string>
+    <string name="workout_card_meta">%1$d min · %2$d exercices</string>
+    <string name="workout_duration_minutes">%1$d min</string>
+    <string name="workout_details_exercises_title">Exercices</string>
+    <string name="exercise_rest_format">Repos %1$ds</string>
+    <string name="complete_workout_dialog_title">Marquer la séance comme terminée ?</string>
+    <string name="complete_workout_dialog_message">Cette séance sera ajoutée à votre historique.</string>
+    <string name="complete_workout_dialog_confirm">Confirmer</string>
+    <string name="history_empty_title">Terminez votre première séance !</string>
+    <string name="history_summary_total">Séances au total</string>
+    <string name="history_today">Aujourd\'hui</string>
+    <string name="history_yesterday">Hier</string>
+    <string name="statistics_total_workouts">Séances au total</string>
+    <string name="statistics_total_hours">Heures au total</string>
+    <string name="statistics_favorite_type">Type préféré</string>
+    <string name="statistics_weekly_activity">Activité hebdo</string>
+    <string name="statistics_weekly_activity_format">%1$d/7</string>
+    <string name="statistics_favorite_none">Aucun</string>
+    <string name="statistics_weekly_chart_title">Cette semaine</string>
+    <string name="statistics_motivation_title">Continuez</string>
+    <string name="statistics_motivation_start">La première séance est la plus dure. Lancez-vous aujourd\'hui !</string>
+    <string name="statistics_motivation_progress">Bravo ! Chaque séance vous rend plus fort.</string>
+    <string name="profile_screen_profile_section_title">Votre profil</string>
+    <string name="profile_name_label">Nom</string>
+    <string name="profile_age_label">Âge</string>
+    <string name="profile_fitness_level_label">Niveau sportif</string>
+    <string name="profile_default_name">Athlète</string>
+    <string name="profile_save_button">Enregistrer</string>
+    <string name="profile_settings_link">Paramètres</string>
+    <string name="profile_stat_workouts">Séances</string>
+    <string name="profile_stat_hours">Heures</string>
+    <string name="profile_stat_days_active">Jours actifs</string>
+    <string name="axpdl_top_bar_settings_title">Paramètres</string>
 </resources>

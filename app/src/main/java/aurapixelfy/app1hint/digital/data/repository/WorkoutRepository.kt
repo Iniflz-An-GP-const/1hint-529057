@@ -21,7 +21,7 @@ class WorkoutRepository {
             ),
             difficulty = Difficulty.BEGINNER,
             type = WorkoutType.STRENGTH,
-            imageUrl = "https://images.pexels.com/photos/8401817/pexels-photo-8401817.jpeg",
+            imageUrl = "https://images.unsplash.com/photo-1649887974297-4be052375a67?w=800&q=80",
         ),
         WorkoutModel(
             id = 2,
@@ -32,7 +32,7 @@ class WorkoutRepository {
                 ExerciseModel(mapOf("en" to "Side Plank", "de" to "Seitstütz", "es" to "Plancha lateral", "fr" to "Planche latérale", "hi" to "साइड प्लैंक", "id" to "Plank samping", "pt" to "Prancha lateral", "ar" to "بلانك جانبي"), 30_000L, null, null, 30_000L, Intensity.MODERATE),
                 ExerciseModel(mapOf("en" to "Bird Dog", "de" to "Diagonalstrecken", "es" to "Perro de caza", "fr" to "Bird dog", "hi" to "बर्ड डॉग", "id" to "Bird dog", "pt" to "Perdigueiro", "ar" to "تمرين الطائر والكلب"), null, 3, 10, 30_000L, Intensity.LOW),
             ), difficulty = Difficulty.BEGINNER, type = WorkoutType.CORE,
-            imageUrl = "https://images.pexels.com/photos/4720311/pexels-photo-4720311.jpeg",
+            imageUrl = "https://images.unsplash.com/photo-1714646442330-9068099f5521?w=800&q=80",
         ),
         WorkoutModel(
             id = 3,
@@ -43,7 +43,7 @@ class WorkoutRepository {
                 ExerciseModel(mapOf("en" to "Inverted Row", "de" to "Umgekehrtes Rudern", "es" to "Remo invertido", "fr" to "Rowing inversé", "hi" to "इनवर्टेड रो", "id" to "Row terbalik", "pt" to "Remada invertida", "ar" to "سحب أفقي مقلوب"), null, 3, 12, 60_000L, Intensity.MODERATE),
                 ExerciseModel(mapOf("en" to "Hanging Knee Raise", "de" to "Hängendes Knieheben", "es" to "Elevación de rodillas colgado", "fr" to "Relevé de genoux suspendu", "hi" to "हैंगिंग नी रेज", "id" to "Angkat lutut menggantung", "pt" to "Elevação de joelhos suspenso", "ar" to "رفع الركبتين مع التعلق"), null, 3, 12, 60_000L, Intensity.HIGH),
             ), difficulty = Difficulty.INTERMEDIATE, type = WorkoutType.UPPER_BODY,
-            imageUrl = "https://images.pexels.com/photos/7187955/pexels-photo-7187955.jpeg",
+            imageUrl = "https://images.unsplash.com/photo-1634225251578-d5f6ffced78a?w=800&q=80",
         ),
         WorkoutModel(
             id = 4,
@@ -54,7 +54,7 @@ class WorkoutRepository {
                 ExerciseModel(mapOf("en" to "Jump Squat", "de" to "Sprungkniebeuge", "es" to "Sentadilla con salto", "fr" to "Squat sauté", "hi" to "जंप स्क्वाट", "id" to "Squat lompat", "pt" to "Agachamento com salto", "ar" to "قرفصاء مع قفز"), 30_000L, null, null, 30_000L, Intensity.HIGH),
                 ExerciseModel(mapOf("en" to "Push-Up", "de" to "Liegestütz", "es" to "Flexión", "fr" to "Pompe", "hi" to "पुश-अप", "id" to "Push-up", "pt" to "Flexão", "ar" to "تمرين ضغط"), 30_000L, null, null, 30_000L, Intensity.MODERATE),
             ), difficulty = Difficulty.INTERMEDIATE, type = WorkoutType.HIIT,
-            imageUrl = "https://images.pexels.com/photos/8401817/pexels-photo-8401817.jpeg",
+            imageUrl = "https://images.unsplash.com/photo-1536922246289-88c42f957773?w=800&q=80",
         ),
         WorkoutModel(
             id = 5,
@@ -65,7 +65,7 @@ class WorkoutRepository {
                 ExerciseModel(mapOf("en" to "Wide Push-Up", "de" to "Breiter Liegestütz", "es" to "Flexión abierta", "fr" to "Pompe large", "hi" to "वाइड पुश-अप", "id" to "Push-up lebar", "pt" to "Flexão aberta", "ar" to "ضغط واسع"), null, 3, 15, 45_000L, Intensity.MODERATE),
                 ExerciseModel(mapOf("en" to "Pseudo Planche Push-Up", "de" to "Pseudo-Planche-Liegestütz", "es" to "Flexión pseudo plancha", "fr" to "Pompe pseudo-planche", "hi" to "स्यूडो प्लांच पुश-अप", "id" to "Pseudo planche push-up", "pt" to "Flexão pseudo planche", "ar" to "ضغط البلانش المساعد"), null, 3, 8, 75_000L, Intensity.MAXIMUM),
             ), difficulty = Difficulty.ADVANCED, type = WorkoutType.UPPER_BODY,
-            imageUrl = "https://images.pexels.com/photos/7187955/pexels-photo-7187955.jpeg",
+            imageUrl = "https://images.unsplash.com/photo-1598971457999-ca4ef48a9a71?w=800&q=80",
         ),
         WorkoutModel(
             id = 6,
@@ -76,7 +76,7 @@ class WorkoutRepository {
                 ExerciseModel(mapOf("en" to "L-Sit", "de" to "L-Sitz", "es" to "L-sit", "fr" to "Équerre", "hi" to "एल-सिट", "id" to "L-sit", "pt" to "L-sit", "ar" to "ثبات حرف إل"), 25_000L, null, null, 60_000L, Intensity.MAXIMUM),
                 ExerciseModel(mapOf("en" to "Dragon Flag", "de" to "Dragon Flag", "es" to "Bandera de dragón", "fr" to "Dragon flag", "hi" to "ड्रैगन फ्लैग", "id" to "Dragon flag", "pt" to "Bandeira do dragão", "ar" to "علم التنين"), null, 3, 8, 90_000L, Intensity.MAXIMUM),
             ), difficulty = Difficulty.ADVANCED, type = WorkoutType.CORE,
-            imageUrl = "https://images.pexels.com/photos/8401817/pexels-photo-8401817.jpeg",
+            imageUrl = "https://images.unsplash.com/photo-1784819482814-f8c0905d7865?w=800&q=80",
         ),
         WorkoutModel(
             id = 7,
@@ -87,7 +87,7 @@ class WorkoutRepository {
                 ExerciseModel(mapOf("en" to "Chin-Up", "de" to "Klimmzug im Untergriff", "es" to "Dominada supina", "fr" to "Traction en supination", "hi" to "चिन-अप", "id" to "Chin-up", "pt" to "Barra supinada", "ar" to "عقلة بقبضة معكوسة"), null, 4, 10, 75_000L, Intensity.HIGH),
                 ExerciseModel(mapOf("en" to "Dead Hang", "de" to "Passiver Hang", "es" to "Suspensión pasiva", "fr" to "Suspension passive", "hi" to "डेड हैंग", "id" to "Gantung pasif", "pt" to "Suspensão passiva", "ar" to "تعلق ثابت"), 45_000L, null, null, 60_000L, Intensity.HIGH),
             ), difficulty = Difficulty.ADVANCED, type = WorkoutType.STRENGTH,
-            imageUrl = "https://images.pexels.com/photos/8401817/pexels-photo-8401817.jpeg",
+            imageUrl = "https://images.unsplash.com/photo-1758521959675-5874879f3977?w=800&q=80",
         ),
     )
 

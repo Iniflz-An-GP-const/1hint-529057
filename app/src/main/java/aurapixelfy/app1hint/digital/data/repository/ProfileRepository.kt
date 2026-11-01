@@ -15,6 +15,18 @@ class ProfileRepository(
 
     fun observeWeightKg(): Flow<Int?> = profileDataStoreManager.weightKgFlow
 
+    fun observeName(): Flow<String> = profileDataStoreManager.nameFlow
+
+    fun observeAge(): Flow<Int?> = profileDataStoreManager.ageFlow
+
+    fun observeFitnessLevel(): Flow<String?> = profileDataStoreManager.fitnessLevelFlow
+
+    suspend fun setProfile(name: String, age: Int?, fitnessLevel: String) {
+        withContext(coroutineDispatcher) {
+            profileDataStoreManager.setProfile(name, age, fitnessLevel)
+        }
+    }
+
     suspend fun setWeeklyGoal(value: Int?) {
         withContext(coroutineDispatcher) {
             profileDataStoreManager.setWeeklyGoal(value)

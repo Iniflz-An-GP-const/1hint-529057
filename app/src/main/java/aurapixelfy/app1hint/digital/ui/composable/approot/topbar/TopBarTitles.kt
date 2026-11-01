@@ -9,6 +9,7 @@ import kotlin.reflect.KClass
 
 internal val canNavigateBackRoutes: List<KClass<out NavRoute>> = listOf(
     NavRoute.Workout::class,
+    NavRoute.Settings::class,
 )
 
 internal fun topBarTitleRes(currentDestination: NavDestination?): Int? {
@@ -16,7 +17,7 @@ internal fun topBarTitleRes(currentDestination: NavDestination?): Int? {
         currentDestination == null -> null
 
         currentDestination.hierarchy.any { it.hasRoute(NavRoute.Home::class) } -> {
-            R.string.axpdl_top_bar_home_title
+            R.string.app_name
         }
 
         currentDestination.hierarchy.any { it.hasRoute(NavRoute.Workout::class) } -> {
@@ -33,6 +34,10 @@ internal fun topBarTitleRes(currentDestination: NavDestination?): Int? {
 
         currentDestination.hierarchy.any { it.hasRoute(NavRoute.Profile::class) } -> {
             R.string.axpdl_top_bar_profile_title
+        }
+
+        currentDestination.hierarchy.any { it.hasRoute(NavRoute.Settings::class) } -> {
+            R.string.axpdl_top_bar_settings_title
         }
 
         else -> null

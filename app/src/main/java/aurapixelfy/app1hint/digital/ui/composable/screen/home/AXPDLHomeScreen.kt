@@ -31,7 +31,6 @@ import aurapixelfy.app1hint.digital.ui.composable.screen.shared.DataEmptyContent
 import aurapixelfy.app1hint.digital.ui.composable.screen.shared.listmotion.LocalPlayedEntrances
 import aurapixelfy.app1hint.digital.ui.composable.screen.shared.listmotion.listEntrance
 import aurapixelfy.app1hint.digital.ui.state.DataUiState
-import aurapixelfy.app1hint.digital.ui.state.WorkoutFilterMode
 import aurapixelfy.app1hint.digital.ui.theme.ControlDivider
 import aurapixelfy.app1hint.digital.ui.theme.LocalDimens
 import aurapixelfy.app1hint.digital.ui.viewmodel.HomeViewModel
@@ -39,12 +38,12 @@ import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun AXPDLHomeScreen(
+    showFilters: Boolean,
     onWorkoutClick: (Int) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = koinViewModel(),
 ) {
     val workoutsState by viewModel.workoutsState.collectAsStateWithLifecycle()
-    val filterMode by viewModel.filterMode.collectAsStateWithLifecycle()
     val selectedType by viewModel.selectedType.collectAsStateWithLifecycle()
     val selectedDifficulty by viewModel.selectedDifficulty.collectAsStateWithLifecycle()
     val weeklyGoal by viewModel.weeklyGoal.collectAsStateWithLifecycle()
@@ -53,13 +52,12 @@ fun AXPDLHomeScreen(
 
     HomeContent(
         workoutsState = workoutsState,
-        filterMode = filterMode,
+        showFilters = showFilters,
         selectedType = selectedType,
         selectedDifficulty = selectedDifficulty,
         weeklyGoal = weeklyGoal,
         weeklyProgress = weeklyProgress,
         tips = tips,
-        onFilterModeToggled = viewModel::onFilterModeToggled,
         onTypeSelected = viewModel::onTypeSelected,
         onDifficultySelected = viewModel::onDifficultySelected,
         onWorkoutClick = onWorkoutClick,
@@ -70,13 +68,12 @@ fun AXPDLHomeScreen(
 @Composable
 private fun HomeContent(
     workoutsState: DataUiState<List<WorkoutModel>>,
-    filterMode: WorkoutFilterMode,
+    showFilters: Boolean,
     selectedType: WorkoutType?,
     selectedDifficulty: Difficulty?,
     weeklyGoal: Int,
     weeklyProgress: Int,
     tips: List<TipModel>,
-    onFilterModeToggled: () -> Unit,
     onTypeSelected: (WorkoutType?) -> Unit,
     onDifficultySelected: (Difficulty?) -> Unit,
     onWorkoutClick: (Int) -> Unit,
@@ -91,13 +88,12 @@ private fun HomeContent(
 
             WorkoutsList(
                 workouts = workouts,
-                filterMode = filterMode,
+                showFilters = showFilters,
                 selectedType = selectedType,
                 selectedDifficulty = selectedDifficulty,
                 weeklyGoal = weeklyGoal,
                 weeklyProgress = weeklyProgress,
                 tips = tips,
-                onFilterModeToggled = onFilterModeToggled,
                 onTypeSelected = onTypeSelected,
                 onDifficultySelected = onDifficultySelected,
                 onWorkoutClick = onWorkoutClick,
@@ -116,13 +112,12 @@ private fun HomeContent(
 @Composable
 private fun WorkoutsList(
     workouts: List<WorkoutModel>,
-    filterMode: WorkoutFilterMode,
+    showFilters: Boolean,
     selectedType: WorkoutType?,
     selectedDifficulty: Difficulty?,
     weeklyGoal: Int,
     weeklyProgress: Int,
     tips: List<TipModel>,
-    onFilterModeToggled: () -> Unit,
     onTypeSelected: (WorkoutType?) -> Unit,
     onDifficultySelected: (Difficulty?) -> Unit,
     onWorkoutClick: (Int) -> Unit,
@@ -154,7 +149,7 @@ private fun WorkoutsList(
                 weeklyProgress = weeklyProgress,
             )
 
-            stickyHeader {
+            if (showFilters) stickyHeader {
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -162,10 +157,8 @@ private fun WorkoutsList(
                 ) {
                     WorkoutFilterRow(
                         modifier = Modifier.padding(vertical = dimens.tightSpacing),
-                        filterMode = filterMode,
                         selectedType = selectedType,
                         selectedDifficulty = selectedDifficulty,
-                        onFilterModeToggled = onFilterModeToggled,
                         onTypeSelected = onTypeSelected,
                         onDifficultySelected = onDifficultySelected,
                     )

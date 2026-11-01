@@ -105,4 +105,40 @@
     <string name="profile_screen_version_label">إصدار</string>
     <string name="profile_screen_developer_label">المطور</string>
     <string name="profile_screen_contact_label">اتصال</string>
+
+    <!-- screen spec additions -->
+    <string name="get_started_button_title">ابدأ الآن</string>
+    <string name="home_filter_toggle_description">عوامل التصفية</string>
+    <string name="workout_card_meta">\u200E%1$d\u200E دقيقة · \u200E%2$d\u200E تمارين</string>
+    <string name="workout_duration_minutes">\u200E%1$d\u200E دقيقة</string>
+    <string name="workout_details_exercises_title">التمارين</string>
+    <string name="exercise_rest_format">راحة \u200E%1$dث\u200E</string>
+    <string name="complete_workout_dialog_title">هل تريد وضع علامة على التمرين كمكتمل؟</string>
+    <string name="complete_workout_dialog_message">سيتم حفظ هذه الجلسة في سجلك.</string>
+    <string name="complete_workout_dialog_confirm">تأكيد</string>
+    <string name="history_empty_title">أكمل تمرينك الأول!</string>
+    <string name="history_summary_total">إجمالي التمارين</string>
+    <string name="history_today">اليوم</string>
+    <string name="history_yesterday">أمس</string>
+    <string name="statistics_total_workouts">إجمالي التمارين</string>
+    <string name="statistics_total_hours">إجمالي الساعات</string>
+    <string name="statistics_favorite_type">النوع المفضل</string>
+    <string name="statistics_weekly_activity">النشاط الأسبوعي</string>
+    <string name="statistics_weekly_activity_format">\u200E%1$d/7\u200E</string>
+    <string name="statistics_favorite_none">لا يوجد</string>
+    <string name="statistics_weekly_chart_title">هذا الأسبوع</string>
+    <string name="statistics_motivation_title">واصل التقدم</string>
+    <string name="statistics_motivation_start">التمرين الأول هو الخطوة الأصعب. ابدأ اليوم!</string>
+    <string name="statistics_motivation_progress">عمل رائع! كل جلسة تجعلك أقوى.</string>
+    <string name="profile_screen_profile_section_title">ملفك الشخصي</string>
+    <string name="profile_name_label">الاسم</string>
+    <string name="profile_age_label">العمر</string>
+    <string name="profile_fitness_level_label">مستوى اللياقة</string>
+    <string name="profile_default_name">رياضي</string>
+    <string name="profile_save_button">حفظ</string>
+    <string name="profile_settings_link">الإعدادات</string>
+    <string name="profile_stat_workouts">التمارين</string>
+    <string name="profile_stat_hours">الساعات</string>
+    <string name="profile_stat_days_active">أيام النشاط</string>
+    <string name="axpdl_top_bar_settings_title">الإعدادات</string>
 </resources>

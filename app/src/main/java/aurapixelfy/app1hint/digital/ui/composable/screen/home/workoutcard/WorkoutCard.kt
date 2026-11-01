@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import aurapixelfy.app1hint.digital.data.model.WorkoutModel
+import aurapixelfy.app1hint.digital.data.model.estimatedMinutes
 import aurapixelfy.app1hint.digital.ui.composable.screen.home.workoutcard.content.WorkoutCardContent
 import aurapixelfy.app1hint.digital.ui.composable.screen.home.workoutcard.shell.WorkoutCardShell
 
@@ -20,6 +21,9 @@ fun WorkoutCard(
         difficultyLabel = stringResource(workout.difficulty.titleRes),
         difficultyLevel = workout.difficulty.level,
         exerciseCount = workout.exercises.size,
+        durationMinutes = workout.estimatedMinutes(),
+        type = workout.type,
+        difficulty = workout.difficulty,
         typeOrdinal = workout.type.ordinal,
     )
 

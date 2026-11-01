@@ -17,6 +17,7 @@ data class OnboardingContent(
     @field:StringRes val titleRes: Int,
     @field:StringRes val descriptionRes: Int,
     val icons: List<ImageVector>,
+    val imageUrl: String,
 )
 
 val onboardingPagesContent = listOf(
@@ -24,6 +25,7 @@ val onboardingPagesContent = listOf(
         titleRes = R.string.axpdl_page_expertise_title,
         descriptionRes = R.string.axpdl_page_expertise_description,
         icons = listOf(Icons.Filled.FitnessCenter, Icons.Filled.Insights),
+        imageUrl = "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
     ),
     OnboardingContent(
         titleRes = R.string.axpdl_page_reliability_title,
@@ -33,6 +35,7 @@ val onboardingPagesContent = listOf(
             Icons.Filled.Timer,
             Icons.Filled.MonitorHeart
         ),
+        imageUrl = "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=800&q=80",
     ),
     OnboardingContent(
         titleRes = R.string.axpdl_page_guarantee_title,
@@ -42,5 +45,6 @@ val onboardingPagesContent = listOf(
             Icons.AutoMirrored.Filled.TrendingUp,
             Icons.Filled.CheckCircle
         ),
+        imageUrl = "https://images.unsplash.com/photo-1548126466-4470dfd3a209?w=800&q=80",
     ),
 )

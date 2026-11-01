@@ -18,6 +18,8 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -32,7 +34,7 @@ import kotlin.time.Duration.Companion.milliseconds
 private const val TITLE_START_DELAY_MS = 300L
 private const val LOGO_DURATION_MS = 650
 private const val TITLE_DURATION_MS = 500
-private const val HOLD_DURATION_MS = 500L
+private const val HOLD_DURATION_MS = 550L
 
 private val LogoSize = 160.dp
 private val LogoRise = 24.dp
@@ -78,6 +80,7 @@ fun SplashContent(
     Box(
         modifier = modifier
             .fillMaxSize()
+            .clip(RoundedCornerShape(48.dp))
             .background(MaterialTheme.colorScheme.background),
         contentAlignment = Alignment.Center,
     ) {
@@ -87,6 +90,7 @@ fun SplashContent(
                 contentDescription = stringResource(R.string.axpdl_app_logo_description),
                 modifier = Modifier
                     .size(LogoSize)
+                    .clip(RoundedCornerShape(40.dp))
                     .graphicsLayer {
                         alpha = logoProgress.value
                         translationY = (1f - logoProgress.value) * LogoRise.toPx()
